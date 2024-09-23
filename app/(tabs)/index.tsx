@@ -43,7 +43,7 @@ export default function TabOneScreen() {
   return (
     <View style={pgDesign.container}>
       <Image 
-        source={{ uri: 'https://picsum.photos/id/203/4032/3024' }} 
+        source={{uri: 'https://picsum.photos/id/203/4032/3024'}} 
         style={pgDesign.image} 
       />
       <Text style={pgDesign.title}>{name}</Text>
@@ -65,37 +65,38 @@ const pgDesign = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 16,
-    marginTop: -130
+    marginTop: -160
   },
   title: {
-    fontSize: 24,
+    fontSize: 23,
     fontWeight: 'bold',
+    marginBottom: 7
   },
   separator: {
     marginVertical: 30,
     height: 1,
-    width: '80%',
+    width: '80%'
   },
   image: {
-    width: 150,
-    height: 150,
-    borderRadius: 75,
-    marginBottom: 16,
+    width: 200,
+    height: 200,
+    borderRadius: 125,
+    marginBottom: 25
   },
   input: {
     height: 40,
     borderColor: '#ccc',
     borderWidth: 1,
-    borderRadius: 5,
+    borderRadius: 10,
     paddingHorizontal: 10,
     width: '80%',
-    marginBottom: 20,
+    marginBottom: 10
   },
   nameDisplay: {
     fontSize: 18,
-    marginTop: 10,
+    marginTop: 10
   },
   emailDisplay: {
-    marginTop: 10,
+    marginTop: 10
   },
 });
